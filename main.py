@@ -31,7 +31,7 @@ def run():
 
 def set_time_binance():
     gt = client.get_server_time()
-    tt = time.gmtime(int((gt["serverTime"])/1000))
+    # tt = time.gmtime(int((gt["serverTime"])/1000))
 
 
 def initialize_arb():
