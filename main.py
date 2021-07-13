@@ -272,7 +272,7 @@ def arbitrage_bin(list_of_sym, tickers, cycle_num=10, cycle_time=30, place_order
                         has_order2 = client.get_open_orders(symbol=list_of_sym[1])
                         has_order3 = client.get_open_orders(symbol=list_of_sym[2])
 
-                        if not has_order2 and not has_order3:
+                        if not has_order1 and not has_order2 and not has_order3:
                             place_order_msg = "REALIZANDO OPERACIÓN\n\n"
                             print(place_order_msg)
                             #data_log_to_file(place_order_msg)
